@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Примеры Javascript</title>
+</head>
+<body>
+
+<script type="text/javascript">
+	var colorArray = ["#5A9C6E", "#FF0000", "#00FF00", "#0000FF"]; 
+	var i = 0; 
+	function changeColor(){
+		document.body.style.background = colorArray[i]; i++;
+		if( i > colorArray.length - 1){
+			i = 0;
+		}
+	}
+</script>
+
+<button onclick="changeColor();"> Изменить цвет фона</button>
+
+</body>
+</html>
